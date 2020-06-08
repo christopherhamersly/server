@@ -106,12 +106,12 @@ body {
       }
 
       #main > section.dark a {
-        color: #fff;
+        color: rgb(212, 209, 209);
         border-color: inherit;
       }
 
         #main > section.dark a:hover {
-          border-bottom-color: rgba(255, 255, 255, 0);
+          border-bottom-color: rgba(175, 170, 170, 0);
         }
 
     #main > section.cover {
@@ -121,18 +121,39 @@ body {
     }
 
     #main > section.one {
-      background-color: #b2d3be;
+      background-color: #6b9279;
+      animation: sectionone 20s linear infinite 0s;
+      animation-timing-function: fade;
+      background-image: url(images/one.png);
       
     }
 
+    @keyframes sectionone {
+      0% {
+          background-image: url(images/two.png);
+      }
+      25% {
+        background-image: url(images/three.png);
+      }
+      50% {
+        background-image: url(images/four.png);
+      }
+      75% {
+        background-image: url(images/five.png);
+      }
+      100% {
+        background-image: url(images/six.png);
+      }
+    }
+
     #main > section.two {
-      background-color: rgb(209, 208, 208);
+      background-color: rgb(139, 129, 129);
     }
 
     #main > section.three {
-      background-color: #ecf1f1;
+      background-color: #d9fcfc;
     }
 
     #main > section.four {
-      background-color: #e8edec;
+      background-color: #aac4be;
     }
